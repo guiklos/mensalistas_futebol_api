@@ -7,14 +7,26 @@ import javax.persistence.*;
 
 public class Jogador {
 
+
+  @Id
   private Integer cod_jogador;
 
+
+  @Column
   private String nome;
 
+
+  @Column
   private String email;
 
+
+  @Column
   private String dataNasc;
 
+
+  public Jogador() {
+
+  }
 
   public Jogador (Integer cod_jogador, String nome, String email, String dataNasc){
     this.cod_jogador=cod_jogador;
