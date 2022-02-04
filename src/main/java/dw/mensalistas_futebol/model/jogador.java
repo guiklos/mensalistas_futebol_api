@@ -22,20 +22,40 @@ public class Jogador {
     this.email=email;
     this.dataNasc=dataNasc;
 }
+  public void setCod_jogador(Integer cod_jogador){
+    this.cod_jogador=cod_jogador;
+  }
 
   public Integer getCod_jogador(){
     return cod_jogador;
   }
 
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+
   public String getNome(){
     return nome;
+  }
+
+  public void setEmail(String email){
+    this.email = email;
   }
   
   public String getEmail(){
     return email;
   }
 
+  public void setDataNasc(String dataNasc){
+    this.dataNasc = dataNasc;
+  }
+
   public String getDataNasc(){
     return dataNasc;
+  }
+
+  @Override
+  public String toString(){
+    return " { Jogador Nome= " + nome + ", email= " + email + "Data de Nascimento= " + dataNasc + "ID= " + cod_jogador + "}" ;
   }
 }
