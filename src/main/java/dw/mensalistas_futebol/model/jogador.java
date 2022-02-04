@@ -6,13 +6,36 @@ import javax.persistence.*;
 @Table(name = "jogador")
 
 public class Jogador {
-  private int cod_jogador;
 
-  private varchar(60) nome;
+  private Integer cod_jogador;
 
-  private varchar(60) email;
+  private String nome;
 
-  private date dataNasc;
+  private String email;
 
-  public Jogador(){}
+  private String dataNasc;
+
+
+  public Jogador (Integer cod_jogador, String nome, String email, String dataNasc){
+    this.cod_jogador=cod_jogador;
+    this.nome=nome;
+    this.email=email;
+    this.dataNasc=dataNasc;
+}
+
+  public Integer getCod_jogador(){
+    return cod_jogador;
+  }
+
+  public String getNome(){
+    return nome;
+  }
+  
+  public String getEmail(){
+    return email;
+  }
+
+  public String getDataNasc(){
+    return dataNasc;
+  }
 }
