@@ -1,0 +1,6 @@
+dw\mensalistas_futebol\model\Jogador.class
+dw\mensalistas_futebol\model\Pagamento.class
+dw\mensalistas_futebol\repository\JogadorRepository.class
+dw\mensalistas_futebol\control\JogadorController.class
+dw\mensalistas_futebol\MensalistasFutebolApplication.class
+dw\mensalistas_futebol\repository\PagamentoRepository.class
