@@ -38,4 +38,19 @@ public class JogadorController {
         return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
       }
   }
+
+  //Criar jogadores
+
+  @PostMapping("/jogadores")
+
+  public ResponseEntity<Jogador> createJogador(@RequestBody Jogador ar){
+    try{
+      Jogador _j = rep.save(new Jogador(ar.getCod_jogador(), ar.getNome(), ar.getEmail(), ar.getDataNasc()));
+      return new ResponseEntity<>(_j, HttpStatus.CREATED);
+    } catch(Exception e){
+        return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+  }
+  
 }
